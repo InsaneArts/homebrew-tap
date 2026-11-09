@@ -33,8 +33,8 @@ cask "atlas" do
 
     Atlas updates itself with `atlas update`.
 
-    Before `brew uninstall --cask atlas`, run `atlas uninstall` so the helper
-    is logged out and its services are removed. `atlas uninstall --remove-helper`
-    also deletes the helper account.
+    To uninstall, run `atlas uninstall` first, so the helper is logged out and
+    its services are removed, then `brew uninstall --cask --force atlas`.
+    `atlas uninstall --remove-helper` also deletes the helper account.
   EOS
 end
