@@ -7,12 +7,10 @@ Homebrew casks for [InsaneArts](https://github.com/InsaneArts) apps.
 [Atlas](https://atlas.insanearts.io/) gives AI agents a hidden second login on your Mac, where they open apps, look, click and type without touching your desktop.
 
 ```sh
-brew tap insanearts/tap
-brew trust insanearts/tap
-brew install --cask insanearts/tap/atlas
+brew trust insanearts/tap && brew install --cask insanearts/tap/atlas
 ```
 
-Homebrew loads casks from a tap outside its own only once you trust it; `brew trust` covers this tap's casks.
+Homebrew loads casks from a tap outside its own only once you trust it; `brew install` then adds the tap by itself.
 
 Then open Atlas from Applications to set it up, or run `atlas init`.
 
