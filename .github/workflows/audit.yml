@@ -1,0 +1,21 @@
+name: audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@main
+      - name: Trust this tap
+        run: brew trust insanearts/tap
+      - name: Style
+        run: brew style --cask insanearts/tap/atlas
+      - name: Audit
+        run: brew audit --cask --strict --online insanearts/tap/atlas
