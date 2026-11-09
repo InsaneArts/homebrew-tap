@@ -1,6 +1,6 @@
 cask "atlas" do
-  version "0.1.1"
-  sha256 "93ca5469c051ab5baa242a33e58430bfe05aba38270d2ef999730dbb521e8d6f"
+  version "0.1.2"
+  sha256 "a96c000b378847574c47c07c8924a71a7914a6a6b4995129b4bb5aa7230ce24e"
 
   url "https://github.com/InsaneArts/atlas/releases/download/v#{version}/Atlas-#{version}-macos.zip"
   name "Atlas"
