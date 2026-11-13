@@ -16,6 +16,6 @@ jobs:
       - name: Trust this tap
         run: brew trust insanearts/tap
       - name: Style
-        run: brew style --cask insanearts/tap/atlas
+        run: brew style --cask insanearts/tap/atlas insanearts/tap/locky
       - name: Audit
-        run: brew audit --cask --strict --online insanearts/tap/atlas
+        run: brew audit --cask --strict --online insanearts/tap/atlas insanearts/tap/locky

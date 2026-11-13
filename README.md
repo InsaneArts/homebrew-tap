@@ -23,3 +23,23 @@ Atlas can also be installed without Homebrew:
 ```sh
 curl -fsSL https://atlas.insanearts.io/install.sh | sh
 ```
+
+## Locky
+
+[Locky](https://github.com/InsaneArts/locky) is a lock screen for your Mac that you build yourself: themes and widgets are Lua files.
+
+```sh
+brew trust insanearts/tap && brew install --cask insanearts/tap/locky
+```
+
+Then open Locky from Applications. The first launch opens the Welcome, where you make Locky your lock screen.
+
+- **Updates:** Locky updates itself, so `brew upgrade` leaves it alone.
+- **Uninstall:** turn off Open at login in Locky's Settings first, then run `brew uninstall --cask locky`. `brew uninstall --cask --zap locky` also deletes your themes and settings in `~/.config/locky`.
+- **Requirements:** macOS 15 or later.
+
+Locky can also be installed without Homebrew:
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/InsaneArts/locky/main/install.sh | sh
+```
